@@ -1,0 +1,65 @@
+body {
+    background-color: gainsboro;
+    background-image: url('./tictactoe.jpg');
+    background-size: cover;   
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+
+.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+h1 {
+    margin-bottom: 10px;
+    margin-top: 100px;
+    color: yellow;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: yellow;
+}
+
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+    justify-content: center;
+   
+  }
+  }
+  
+  .sqr {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 3px solid rgb(197, 240, 70);
+    font-size: 64px;
+    text-align: center;
+  }
+  button {
+    margin: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 100px;
+    border-radius: 120%;
+    background-color: red;
+    
+  }
+  
+  button:hover {
+    border: 1px solid rgba(0,0,0,0.5);
+    cursor: pointer;
+  } 
+  
