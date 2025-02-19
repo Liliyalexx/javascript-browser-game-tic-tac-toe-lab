@@ -35,11 +35,11 @@ let tie = false;
 /*------------------------ Cached Element References ------------------------*/
 //Store cached element references
 const squareEls = document.querySelectorAll(".sqr");
-console.log(squareEls)
+//console.log(squareEls)
 const messageEl = document.getElementById("message");
-console.log(message);
+//console.log(message);
 const resetBtnEl = document.getElementById("reset");  // Cached reference for reset button
-const boardEl = document.querySelector('.board');  // Cache board element
+const boardEl = document.querySelector('.board');  // Cached board element
 
 /*-------------------------------- Functions --------------------------------*/
 //Create a function called init.
@@ -48,7 +48,7 @@ function init() {
     turn = "🐶";
     winner = false;
     tie = false;
-    console.log("Game initialized");
+    //console.log("Game initialized");
     render();
 }
 
@@ -86,7 +86,7 @@ function updateMessage() {
 // Handle clicks
 function handleClick(event) {
 const squareIndex = parseInt(event.target.id);
-  if (board[squareIndex] || winner) return; // Prevent overwriting an already clicked square
+  if (board[squareIndex] || winner) return; // Prevent overwriting of clicked square
   placePiece(squareIndex);
   checkForWinner();
   checkForTie();
@@ -96,6 +96,7 @@ const squareIndex = parseInt(event.target.id);
 
 function placePiece(index) {
   board[index] = turn;
+  //console.log(board);
 }
 
 function checkForWinner() {
@@ -103,6 +104,7 @@ function checkForWinner() {
     const [a, b, c] = combo;
     if (board[a] && board[a] === board[b] && board[a] === board[c]) {
       winner = true;
+      //console.log('And Winner is ' + winner);
     }
   });
 }
@@ -110,13 +112,14 @@ function checkForWinner() {
 function checkForTie() {
   if (!board.includes('') && !winner) {
     tie = true;
+    //console.log("This is tie " + tie);
   }
 }
 
 function switchPlayerTurn() {
     if (winner) return;
     turn = (turn === "🐶") ? "🐱" : "🐶";
-    console.log(`Turn switched to ${turn}`);
+    //console.log(`Turn switched to ${turn}`);
 }
 /*----------------------------- Event Listeners -----------------------------*/
 
