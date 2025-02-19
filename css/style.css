@@ -22,11 +22,12 @@ h1 {
     margin-bottom: 10px;
     margin-top: 100px;
     color: yellow;
+    font-size: 50px;
 }
 
 h2 {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 30px;
     color: yellow;
 }
 
@@ -51,9 +52,9 @@ h2 {
     font-size: 20px;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 100px;
+    width: 312px;
     height: 100px;
-    border-radius: 120%;
+    border-radius: 0%;
     background-color: red;
     
   }
